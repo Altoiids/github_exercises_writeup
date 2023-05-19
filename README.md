@@ -35,3 +35,21 @@ git commit -m "gitignore file add" # for committing the file
 git verify # for pushing the file
 </pre> 
 
+# Challenge 5- chase-branch
+## Commands Used
+<pre>
+git merge chase-branch
+git verify # for pushing the file
+</pre> 
+
+# Challenge 6- merge-conflict
+## Commands Used
+<pre>
+git merge another-piece-of-work
+# reading the text we will get to know conflict is in equation.txt file
+nano conflict.txt
+# resolve the conflict by making entire text 2 + 3 = 5
+git add A.txt   # for adding file to staged area
+git commit -m "gitignore file add" # for committing the file
+git verify # for pushing the file
+</pre> 
