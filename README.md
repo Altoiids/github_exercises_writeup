@@ -109,3 +109,19 @@ git log #to check if we did write
 git verify
 </pre> 
 
+# Challenge 13- fix-old-typo 
+## Commands Used
+<pre>
+git rebase -i HEAD~2 #to open interactive rebase window. Here we will change top most commit from pick to edit (using ctrl+x it changes the option)
+echo "Hello world" > file.txt
+git add file.txt
+git commit --amend -m "Add Hello world"
+git rebase --continue # to go to next commit
+nano file.txt
+git add file.txt #merge conflict resolved
+git rebase --continue
+git verify
+</pre> 
+
+
+
